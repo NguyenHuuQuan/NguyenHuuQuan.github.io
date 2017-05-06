@@ -1,9 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<meta charset="utf-8">
+	<title>meanjs</title>
+	<link rel="stylesheet" type= "text/css" href="style.css">
 </head>
 <body>
-	<h1><center>MEANJS</center></h1>
+
+	<div class="container">
+
+		<header>
+			<h1>MEANJS</h1>
+		</header>
+
+		<nav>
+
+		</nav>
+
+		<article>
+
+			<h2>A. THÔNG TIN NHÓM</h2>
+			<table style="width:100%">
+				<tr>
+					<th>STT</th>
+					<th>Họ và tên</th>
+					<th>MSSV</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Phạm Trọng Ân</td>
+					<td>1312024</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Nguyễn Hửu Quân</td>
+					<td>1312461</td>
+				</tr>
+			</table>
+			<br>
+
+			<h2>B. NỘI DUNG</h2>
+			<p>
+				Để thuận tiện cho việc xây dựng, quản lý và phát triển các trang web,
+				rất nhiều các framework đã được xây dựng. Nổi tiếng nhất trong số đó
+				phải kể đến LAMP bao gồm Linux server, Apache, MySQL và PHP. Tuy nhiên,
+				web hiện đại yêu cầu khả năng tương tác cao hơn đồng nghĩa với LAMP
+				stack không phải là giải pháp tối ưu. Đã có rất nhiều các framework khác
+				được xây dựng dựa trên nền tảng các ngôn ngữ khác nhau như Ruby, Python,
+				Perl,... Tuy nhiên, về cơ bản vẫn dựa trên LAMP và ít có sự phá cách.
+				Thời gian gần đây, nhiều website đã được xây dựng dựa trên NodeJS, tuy
+				nhiên vẫn còn hết sức đơn giản vì NodeJS vẫn còn hết sức thô sơ. Bài
+				viết này xin được giới thiệu một framework mới dựa trên NodeJS có khả
+				năng xây dựng một trang web hoàn chỉnh dựa trên ngôn ngữ Javascript,
+				đó là MEANJS.
+			</p>
+
+			<h3>I. Giới thiệu về MeanJS</h3>
+			<p>MeanJS là một Framework hoàn toàn mới được xây dựng dựa trên các thành
+				phần bao gồm: </p>
+			<p>* MongoDB: Một NoSQL database điển hình.</p>
+			<p>* Express: Middleware với database.</p>
+			<p>* AngularJS: front end framework.</p>
+			<p>* NodeJS: một ứng dụng web về phía Server.</p>
+
+			<h3>1. Giới thiệu MongoDB</h3>
+			<p>MongoDB là một cơ sở dữ liệu đa nền tảng, hoạt động trên các khái niệm
+				Collection và Document, nó cung cấp hiệu suất cao, tính khả dụng cao và
+				khả năng mở rộng dễ dàng.
+			</p>
+
+			<h3>a. Khái niệm Database</h3>
+			<p>
+				Database là một nơi chứa vật lý cho các Collection. Mỗi Database lấy tập
+				hợp các file riêng của nó trên hệ thống file. Mỗi MongoDB Server có thể
+				có nhiều cơ sở dữ liệu.
+			</p>
+
+			<h3>b. Khái niệm Collection</h3>
+			<p>
+				Collection là một nhóm các Document trong MongoDB. Nó tương đương như
+				một bảng trong RDBMS. Do đó, một Collection tồn tại bên trong một cơ sở
+				dữ liệu duy nhất. Các Collection không có ràng buộc Relationship như các
+				hệ quản trị cơ sở dữ liệu khác nên việc truy xuất rất nhanh, chính vì
+				thế mỗi collection có thể chứa nhiều thể loại khác nhau không giống như
+				table trong hệ quản trị mysql là các field cố định. Các Document bên
+				trong một Collection có thể có nhiều trường khác nhau. Đặc biệt, tất cả
+				các Document trong một Collection là tương tự nhau hoặc với cùng mục
+				đích liên quan.
+			</p>
+
+			<h3>c. Khái niệm Document</h3>
+			<p>
+				Một Document trong MongoDB, có cấu trúc tương tự như kiểu dữ liệu JSON,
+				là một tập hợp các cặp key-value. Các Document có schema động, nghĩa là
+				Document trong cùng một Collection không cần thiết phải có cùng một tập
+				hợp các trường hoặc cấu trúc giống nhau, và các trường chung trong
+				Document của một Collection có thể giữ các kiểu dữ liệu khác nhau.
+			</p>
+
+			<h3>d. Cấu trúc Document đơn giản</h3>
+			<p>
+				Ví dụ dưới đây minh họa cấu trúc Document của một Blog site với một cặp
+				key-value phân biệt bởi dấu phẩy.
+			</p>
+			<img src="images/cau_truc_documnet_don_gian.jpg" alt="cau_truc_document_don_gian"/>
+
+			<h3>II. Cài đặt</h3>
+
+			<h3>III. Tìm hiểu MEANJS qua việc làm ứng dụng viết blog</h3>
+		</article>
+
+		<footer></footer>
+
+	</div>
+
 </body>
 </html>
