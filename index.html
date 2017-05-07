@@ -104,6 +104,47 @@
 				key-value phân biệt bởi dấu phẩy.
 			</p>
 			<img src="images/cau_truc_documnet_don_gian.jpg" alt="cau_truc_document_don_gian"/>
+			<p>
+				Ở đây, _id là một số thập lục phân 12 byte để đảm bảo tính duy nhất của
+				mỗi Document. Bạn có thể cung cấp _id trong khi chèn vào Document. Nếu
+				bạn không cung cấp, thì mongoDB sẽ cung cấp một _id duy nhất cho mỗi
+				Document. Trong 12 byte này, 4 byte đầu là cho Timestamp hiện tại, 3
+				byte tiếp theo cho ID của thiết bị, 2 byte tiếp là process id của
+				MongoDB Server và 3 byte còn lại là giá trị có thể tăng.
+			</p>
+
+			<h3>e. Cơ chế hoạt động</h3>
+			<p>
+				Mỗi bản ghi của mongodb được tự động gắn thêm một field có name là “id”
+				thuộc kiểu dữ liệu ObjectId mà nó quy định để xác định được tính duy
+				nhất của bản ghi so với bản ghi khác. Trường dữ liệu “id” luôn được tự
+				động đánh index để tốc độ truy vấn thông tin đạt hiệu xuất cao nhất. Mỗi
+				khi có một truy vấn dữ liệu thì bản ghi được ghi đệm lên bộ nhớ RAM để
+				lượt truy vấn sau diễn ra nhanh hơn mà không cần đọc từ ổ cứng. Khi có
+				yêu cầu: “thêm, sửa, xóa” vào bản ghi, để đảm bảo hiệu xuất của ứng
+				dụng, mặc định thì mongodb chưa cập nhật dữ liệu xuống ổ cứng ngay lập
+				tức mà sau 60 giây thì mongodb mới ghi toàn bộ dữ liệu từ RAM xuống ổ
+				cứng.
+			</p>
+
+			<h3>f. Ưu điểm</h3>
+			<p>
+				Lưu trữ phi cấu trúc, không có tính ràng buộc toàn vẹn nên tính sẵn sàng
+				cao, hiêu suất lớn, dễ dàng mở rộng lưu trữ. Dữ liệu được ghi đệm lên
+				RAM hạn chế truy cập vào ổ cứng nên tốc độ đọc và ghi cao.
+			</p>
+
+			<h3>g. Nhược điểm</h3>
+			<p>
+				Không ràng buộc toàn vẹn nên không ứng dụng được cho các mô hình giao
+				dịch cần độ chính xác cao, không có cơ chế transaction để phục vụ các
+				ứng dụng ngân hàng. Dữ liệu được catching từ RAM làm trọng tâm hoạt động
+				nên khi hoạt động cần bộ nhớ RAM lớn. Khả năng mất dữ liệu do mất điện
+				với hiệu xuất cao do dữ liệu không được ghi lập tức.
+			</p>
+
+			<h3>2. Giới thiệu Express Framework</h3>
+			
 
 			<h3>II. Cài đặt</h3>
 
